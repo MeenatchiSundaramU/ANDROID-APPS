@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ForgetworkActivity"
+    android:background="@color/colorPrimary">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Enter Username"
+        android:drawableStart="@drawable/ic_username"
+        android:drawablePadding="6dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/forgetname"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="5dp"
+        android:background="@drawable/rounded_edit"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:drawableStart="@drawable/ic_pass"
+        android:drawablePadding="6dp"
+        android:hint="Enter New Password"
+        android:layout_below="@+id/forgetname"
+        android:layout_marginTop="20dp"
+        android:id="@+id/forgetpassword"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="5dp"
+        android:background="@drawable/rounded_edit"
+        android:inputType="textPassword"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Enter New Confirm Password"
+        android:drawableStart="@drawable/ic_pass"
+        android:drawablePadding="6dp"
+        android:layout_below="@+id/forgetpassword"
+        android:layout_marginTop="20dp"
+        android:id="@+id/forgetconfirmpassword"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="5dp"
+        android:background="@drawable/rounded_edit"
+        android:inputType="textPassword"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/forbtn"
+        android:layout_below="@+id/forgetconfirmpassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Reset"
+        android:background="@drawable/rounded_edit"
+        android:padding="5dp"/>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/forgetprobar"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="190dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="20dp"
+    app:cardBackgroundColor="@color/gradient2">
+    <LinearLayout
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="10">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_weight="3"
+            android:padding="5dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/cproductsicon"/>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tomato"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/ccropname"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:padding="3dp"
+                android:textColor="#ffffff"
+                />
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="High Quality(in Kg's):"
+                android:id="@+id/chigh"
+                android:layout_below="@+id/ccropname"
+                android:textSize="15sp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="500"
+                android:textColor="#000000"
+                android:layout_below="@+id/ccropname"
+                android:layout_toRightOf="@+id/chigh"
+                android:id="@+id/chighvalue"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medium Quality(in Kg's):"
+                android:id="@+id/cmedium"
+                android:layout_below="@+id/chigh"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:textColor="#ffffff"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="500"
+                android:textColor="#000000"
+                android:layout_below="@+id/chighvalue"
+                android:layout_toRightOf="@+id/cmedium"
+                android:id="@+id/cmediumvalue"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Low Quality(in Kg's):"
+                android:id="@+id/clow"
+                android:textColor="#ffffff"
+                android:layout_below="@+id/cmedium"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="500"
+                android:textColor="#000000"
+                android:layout_below="@+id/cmediumvalue"
+                android:layout_toRightOf="@+id/clow"
+                android:id="@+id/clowvalue"
+                android:textSize="15sp"
+                android:textStyle="bold"
+
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Price:Rs."
+                android:id="@+id/ctotal"
+                android:textColor="#ffffff"
+                android:layout_below="@+id/clowvalue"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="500"
+                android:textColor="#000000"
+                android:layout_below="@+id/clowvalue"
+                android:layout_toRightOf="@+id/ctotal"
+                android:id="@+id/ctotalvalue"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"/>
+
+
+
+
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel Item"
+                android:background="@drawable/edit_text"
+                android:layout_below="@+id/ctotalvalue"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="50dp"/>
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

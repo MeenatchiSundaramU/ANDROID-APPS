@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="255dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="0dp"
+            app:civ_border_width="3dp"
+            android:layout_height="100dp"
+            android:layout_weight="1.5"
+            android:src="@mipmap/ic_launcher"
+            android:layout_margin="5dp"
+            android:id="@+id/view_image"
+            android:layout_gravity="center"/>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3.5">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Crop Name"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:id="@+id/view_cropname"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Farmer's Name: "
+                android:layout_below="@+id/view_cropname"
+                android:textColor="#000000"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/farmername"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/hqqprice"
+                android:id="@+id/farmernamevalue"
+                android:text="Mano"
+                android:layout_below="@+id/view_cropname"
+                android:layout_margin="5dp"
+                android:textColor="#000000"/>
+
+
+
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="H.Q.Q(in Kg's): "
+                android:layout_below="@+id/farmername"
+                android:textColor="#000000"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/hqq"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/hqqprice"
+                android:id="@+id/hqqvalue"
+                android:text="Mano"
+                android:layout_below="@+id/farmernamevalue"
+                android:textColor="#000000"
+                android:layout_marginLeft="5dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="M.Q.Q(in Kg's): "
+                android:layout_below="@+id/hqq"
+                android:textColor="#000000"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/mqq"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/hqqprice"
+                android:id="@+id/mqqvalue"
+                android:text="Mano"
+                android:layout_below="@+id/hqqvalue"
+                android:layout_margin="5dp"
+                android:textColor="#000000"/>
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="L.Q.Q(in Kg's): "
+                android:layout_below="@+id/mqq"
+                android:textColor="#000000"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/lqq"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/hqqprice"
+                android:id="@+id/lqqvalue"
+                android:text="Mano"
+                android:layout_marginLeft="5dp"
+                android:layout_below="@+id/mqqvalue"
+                android:textColor="#000000"/>
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="H.Q.Q Price(per Kg): "
+                android:layout_below="@+id/lqq"
+                android:textColor="#000000"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/hqqprice"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/hqqprice"
+                android:id="@+id/hqqpricevalue"
+                android:text="100.0-2000"
+                android:layout_below="@+id/lqqvalue"
+                android:layout_margin="5dp"
+                android:textColor="#000000"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="M.Q.Q Price(per Kg): "
+                android:layout_below="@+id/hqqprice"
+                android:textColor="#000000"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/mqqprice"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/hqqprice"
+                android:id="@+id/mqqpricevalue"
+                android:text="Mano"
+                android:layout_below="@+id/hqqpricevalue"
+                android:textColor="#000000"
+                android:layout_marginLeft="5dp"/>
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="L.Q.Q Price(in Kg): "
+                android:layout_below="@+id/mqqprice"
+                android:textColor="#000000"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/lqqprice"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/hqqprice"
+                android:id="@+id/lqqpricevalue"
+                android:text="Mano"
+                android:layout_below="@+id/mqqpricevalue"
+                android:layout_margin="5dp"
+                android:textColor="#000000"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lqqpricevalue"
+                android:layout_centerInParent="true"
+                android:text="Add To BuyerShow"
+                android:id="@+id/addbtns"
+                android:textStyle="bold"/>
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

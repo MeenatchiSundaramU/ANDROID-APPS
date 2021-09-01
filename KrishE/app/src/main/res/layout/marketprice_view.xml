@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/gradient2"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="20dp">
+    <LinearLayout
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="6">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="1.5"
+            android:src="@mipmap/ic_launcher"
+            android:padding="5dp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="30dp"
+
+            android:id="@+id/esellmarketcropimage"/>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4.5">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tomato"
+                android:textColor="#ffffff"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:padding="3dp"
+                android:id="@+id/esellmarketcropname"
+                 android:layout_marginLeft="96dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:text="Quantity:"
+                android:textColor="#ffffff"
+                android:textSize="17sp"
+                android:layout_below="@id/esellmarketcropname"
+                android:textStyle="bold"
+                android:id="@+id/esellquantityname"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/esellmarketcropname"
+                android:layout_toRightOf="@+id/esellquantityname"
+                android:text="1KG"
+
+                android:textSize="17sp"
+                android:textColor="#ffffff"
+
+                android:textStyle="bold"
+                android:id="@+id/esellquantityvalue"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="Base Price: Rs."
+                android:textColor="#ffffff"
+                android:textSize="17sp"
+                android:layout_below="@id/esellquantityname"
+                android:textStyle="bold"
+                android:id="@+id/esellmarketprice"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/esellquantityvalue"
+                android:layout_toRightOf="@+id/esellmarketprice"
+                android:text="35"
+                android:textColor="#ffffff"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:id="@+id/esellmarketpricevalue"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:textColor="#ffffff"
+                android:text="High Quality Price:"
+                android:textSize="17sp"
+                android:layout_below="@id/esellmarketpricevalue"
+                android:textStyle="bold"
+                android:id="@+id/esellhighquality"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/esellhighquality"
+                android:text="Rs."
+                android:textColor="#ffffff"
+                android:textSize="17sp"
+                android:layout_marginLeft="100dp"
+                android:textStyle="bold"
+
+                android:id="@+id/esellhighpricevaluetext"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/esellhighquality"
+                android:text="100"
+                android:textColor="#ffffff"
+                android:textSize="17sp"
+
+                android:layout_toRightOf="@+id/esellhighpricevaluetext"
+                android:textStyle="bold"
+                android:id="@+id/esellhighqualityvalue"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="48dp"
+                android:text="Medium Quality Price:"
+                android:textColor="#ffffff"
+                android:textSize="17sp"
+                android:layout_below="@id/esellhighqualityvalue"
+                android:textStyle="bold"
+                android:id="@+id/esellmediumquality"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/esellmediumquality"
+                android:text="Rs."
+                android:textColor="#ffffff"
+                android:textSize="17sp"
+                android:layout_marginLeft="100dp"
+                android:textStyle="bold"
+                android:id="@+id/esellmediumpricevaluetext"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/esellmediumquality"
+                android:text="80"
+                android:textColor="#ffffff"
+                android:textSize="17sp"
+
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/esellmediumpricevaluetext"
+                android:id="@+id/esellmediumqualityvalue"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:text="Low Quality Price"
+                android:textColor="#ffffff"
+                android:textSize="17sp"
+                android:layout_below="@id/esellmediumqualityvalue"
+                android:textStyle="bold"
+                android:id="@+id/eselllowquality"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/eselllowquality"
+                android:text="Rs."
+                android:textColor="#ffffff"
+                android:textSize="17sp"
+                android:layout_marginLeft="100dp"
+                android:textStyle="bold"
+                android:id="@+id/eselllowpricevaluetext"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/eselllowquality"
+                android:text="100"
+                android:textColor="#ffffff"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/esellhighpricevaluetext"
+                android:id="@+id/eselllowqualityvalue"/>
+
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

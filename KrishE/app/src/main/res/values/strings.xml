@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Krish-E</string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+    <string name="reg_pass">RegPass</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="aboutmarketprice">This shows the current Price in Market at your nearby Location.</string>
+    <string name="aboutaddproducts">The User needs to upload their daily productions in this category
+You need to select the crops, followed by the Quality and then the user need to add the quantity of the crops.
+After Adding of Quantity the Price Range will be shown.</string>
+    <string name="aboutsoldproductstext">This option gives the detailed information about the previous products being sold by the users.
+</string>
+    <string name="aboutcancelproductstext">This option makes the Farmer to cancel the unwanted crop added to cart accidently.
+</string>
+    <string name="aboutstatus">This option helps the users to track the status of their product. It shows three stages starting from the Collection followed by Transportation and ends with the Payment option.
+</string>
+    <string name="aboutnotifi">The current Status and the other important Information will be notified through Notifications</string>
+    <string name="aboutfeed">The Users can able to add their Feedbacks, queries and Necessities through the Feedback option.</string>
+    <string name="aboutprof">The User’s profile will be available here. The user can able to edit his Basic personal details and Land details through this option</string>
+    <string name="abouthelp">In case, if the users need any help or guidance they can use this option. Through this the users can directly able to contact the app officials</string>
+
+    <string name="aboutbuyproducts">The daily availability of crops and their prices will be displayed
+Retailers can able to select the product based on their requirement
+The selected crops will be added to their cart</string>
+    <string name="aboutcart">This option gives the detailed information about the previous products transactions of the user.
+	This option helps the user to cancel the unwanted crop added to cart accidently.
+</string>
+    <string name="abouttrack">This option helps the users to track the Status of their product. It shows three stages starting from the Collection followed by Transportation and ends with the Payment option</string>
+    <string name="aboutpaymentinfo">It Shows the Debit Card Details and Credit Card Details and it displayed the history of Transactions</string>
+<string name="address">XXX Pvt. Ltd,
+
+No. 3,
+
+ YYY Road,
+    ,ZZZ,India</string>
+</resources>

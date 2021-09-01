@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mainfragment.CompletedFragment">
+    <RelativeLayout
+        android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Farmer's Name's:"
+            android:id="@+id/farmers"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mano,Manivannan"
+            android:layout_marginTop="10dp"
+            android:id="@+id/farmersvalue"
+            android:textSize="18sp"
+            android:layout_marginStart="15dp"
+            android:layout_toRightOf="@+id/farmersloc"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Farmer's Location:"
+            android:id="@+id/farmersloc"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/farmers"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tirunelveli"
+            android:layout_marginTop="10dp"
+            android:id="@+id/farmerslocvalue"
+            android:textSize="18sp"
+            android:layout_marginStart="15dp"
+            android:layout_below="@+id/farmersvalue"
+            android:layout_toRightOf="@+id/farmersloc"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Company's Location:"
+            android:id="@+id/comploc"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/farmersloc"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vallioor"
+            android:layout_marginTop="10dp"
+            android:id="@+id/complocvalue"
+            android:textSize="18sp"
+            android:layout_marginStart="15dp"
+            android:layout_below="@+id/farmerslocvalue"
+            android:layout_toRightOf="@+id/farmersloc"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vegetable:"
+            android:id="@+id/vege"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/comploc"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Carrot"
+            android:layout_marginTop="10dp"
+            android:id="@+id/vegevalue"
+            android:textSize="18sp"
+            android:layout_marginStart="15dp"
+            android:layout_below="@+id/complocvalue"
+            android:layout_toRightOf="@+id/farmersloc"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantity(in Kg's)"
+            android:id="@+id/quantity"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/vege"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="200Kg"
+            android:layout_marginTop="10dp"
+            android:id="@+id/quantityvalue"
+            android:textSize="18sp"
+            android:layout_marginStart="15dp"
+            android:layout_below="@+id/vegevalue"
+            android:layout_toRightOf="@+id/farmersloc"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/totalfare"
+            android:textStyle="bold"
+            android:text="Total Fare(in Rs):"
+            android:textSize="18sp"
+            android:layout_below="@+id/quantityvalue"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ctotalfareval"
+            android:text="Click Calculate Fare"
+            android:textSize="18sp"
+            android:layout_below="@+id/quantityvalue"
+            android:layout_toRightOf="@+id/totalfare"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accept"
+            android:id="@+id/caccept"
+            android:background="#7CFC00"
+            android:layout_below="@+id/totalfare"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Decline"
+            android:id="@+id/decline"
+            android:background="#F72119"
+            android:layout_below="@+id/totalfare"
+            android:layout_toRightOf="@+id/caccept"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Fare"
+            android:id="@+id/cfarebtn"
+            android:layout_below="@+id/totalfare"
+            android:layout_toRightOf="@+id/decline"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:background="@color/colorAccent"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

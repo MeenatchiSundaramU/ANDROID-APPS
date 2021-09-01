@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sell.EselladdproductsFragment"
+    android:background="@drawable/gradient">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<ImageView
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:src="@drawable/common_dp"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/addproducticon"
+    android:layout_marginTop="25dp"/>
+    <EditText
+        android:layout_width="380dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/addproducticon"
+        android:hint="ENTER CROP NAME"
+        android:id="@+id/addcropname"
+        android:background="@drawable/edit_text"
+        android:layout_marginTop="25dp"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"/>
+    <EditText
+        android:layout_width="380dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/addcropname"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_text"
+        android:textAlignment="center"
+        android:hint="ENTER CROP VARIETY"
+        android:id="@+id/addcropvariety"
+        android:layout_centerHorizontal="true"/>
+    <EditText
+        android:layout_width="380dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/addcropvariety"
+        android:layout_marginTop="20dp"
+        android:hint="ENTER HARVEST DATE"
+        android:background="@drawable/edit_text"
+        android:id="@+id/addharvestdate"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"/>
+    <EditText
+        android:layout_width="380dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/addharvestdate"
+        android:hint="TODAY'S DATE:"
+        android:id="@+id/addtodaydate"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edit_text"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:layout_width="380dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/addtodaydate"
+
+        android:hint="ENTER CROP QUANTITY(in Kg's)"
+        android:id="@+id/addcropquantity"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edit_text"
+        android:layout_marginTop="20dp"
+        android:inputType="number"/>
+    <EditText
+        android:layout_width="380dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/addcropquantity"
+        android:inputType="number"
+        android:hint="HIGH QUALITY QUANTITY(in Kg's)"
+        android:id="@+id/addhighqualityquantity"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edit_text"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:layout_width="380dp"
+        android:layout_height="30dp"
+        android:inputType="number"
+        android:layout_below="@+id/addhighqualityquantity"
+        android:hint="MEDIUM QUALITY QUANTITY(in Kg's)"
+        android:id="@+id/addmediumqualityquantity"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edit_text"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:layout_width="380dp"
+        android:layout_height="30dp"
+        android:inputType="number"
+        android:layout_below="@+id/addmediumqualityquantity"
+        android:hint="LOW QUALITY QUANTITY(in Kg's)"
+        android:id="@+id/addlowqualityquantity"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edit_text"
+        android:layout_marginTop="20dp"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Suggestion Price"
+        android:textStyle="bold"
+        android:layout_below="@+id/addlowqualityquantity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/addsuggestion"
+        android:background="@drawable/edit_text"
+        android:padding="5dp"/>
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="High Quality Price : Rs."
+     android:layout_below="@+id/addsuggestion"
+     android:textStyle="bold"
+     android:textSize="15sp"
+     android:textColor="#ffffff"
+     android:layout_marginLeft="25dp"
+     android:layout_marginTop="15dp"
+     android:id="@+id/highqualityprice"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click Suggestion"
+        android:layout_below="@+id/addsuggestion"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/highqualitypricevalue"
+        android:layout_toRightOf="@+id/mediumqualityprice"/>
+
+
+
+    <TextView
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medium Quality Price : Rs."
+        android:layout_below="@+id/highqualityprice"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/mediumqualityprice"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click Suggestion"
+        android:layout_below="@+id/highqualitypricevalue"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/mediumqualitypricevalue"
+        android:layout_toRightOf="@+id/mediumqualityprice"/>
+
+
+    <TextView
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Low Quality Price : Rs."
+        android:layout_below="@+id/mediumqualityprice"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/lowqualityprice"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click Suggestion"
+        android:layout_below="@+id/mediumqualitypricevalue"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/lowqualitypricevalue"
+        android:layout_toRightOf="@+id/mediumqualityprice"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addproductbtn"
+        android:layout_below="@+id/lowqualityprice"
+        android:layout_centerHorizontal="true"
+        android:text="ADD PRODUCT"
+        android:background="@drawable/edit_text"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"/>
+</RelativeLayout>
+</ScrollView>

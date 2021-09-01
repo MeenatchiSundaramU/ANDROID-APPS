@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sell.EsellaboutFragment"
+    android:background="@drawable/gradient">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:id="@+id/esellaboutimage"
+        android:src="@drawable/appicond"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/esellaboutimage"
+        android:id="@+id/esellaboutscrollview"
+        android:background="@drawable/gradient">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Market Price"
+        android:id="@+id/aboutmarketprice"
+        android:drawableLeft="@drawable/ic_serach3"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="#000000"
+        android:layout_centerHorizontal="true"/>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/aboutmarketprice"
+           android:text="@string/aboutmarketprice"
+           android:textAlignment="center"
+           android:padding="10dp"
+           android:textStyle="bold"
+           android:textColor="#ffffff"
+           android:textSize="20sp"
+           android:id="@+id/aboutmarketpricetext"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Products"
+                android:id="@+id/aboutaddproducts"
+                android:drawableLeft="@drawable/ic_serach3"
+                android:layout_below="@+id/aboutmarketpricetext"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:textColor="#000000"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/aboutaddproducts"
+
+                android:text="@string/aboutaddproducts"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:id="@+id/aboutproductstext"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sold Products"
+                android:drawableLeft="@drawable/ic_serach3"
+                android:id="@+id/aboutsoldproducts"
+                android:layout_below="@+id/aboutproductstext"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:textColor="#000000"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/aboutsoldproducts"
+
+                android:text="@string/aboutsoldproductstext"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:id="@+id/aboutsoldproductstext"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel Products"
+                android:id="@+id/aboutcancelproducts"
+                android:drawableLeft="@drawable/ic_serach3"
+                android:layout_below="@+id/aboutsoldproductstext"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:textColor="#000000"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/aboutcancelproducts"
+                android:text="@string/aboutcancelproductstext"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:id="@+id/aboutcancelproductstext"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status Of Products"
+                android:id="@+id/aboutstatusproducts"
+                android:drawableLeft="@drawable/ic_serach3"
+                android:layout_below="@+id/aboutcancelproductstext"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:textColor="#000000"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/aboutstatusproducts"
+                android:text="@string/aboutstatus"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:id="@+id/aboutstatusproductstext"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Notifications"
+                android:id="@+id/aboutnotifi"
+                android:drawableLeft="@drawable/ic_serach3"
+                android:layout_below="@+id/aboutstatusproductstext"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:textColor="#000000"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/aboutnotifi"
+
+                android:text="@string/aboutnotifi"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:id="@+id/aboutnotifiproductstext"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Feedback"
+                android:id="@+id/aboutfeedback"
+                android:layout_below="@+id/aboutnotifiproductstext"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/ic_serach3"
+                android:textSize="25sp"
+                android:textColor="#000000"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/aboutfeedback"
+
+                android:text="@string/aboutfeed"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:id="@+id/aboutfeedbacktext"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:id="@+id/aboutprofile"
+                android:drawableLeft="@drawable/ic_serach3"
+                android:layout_below="@+id/aboutfeedbacktext"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:textColor="#000000"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/aboutprofile"
+                android:text="@string/aboutprof"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:id="@+id/aboutprofiletext"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_serach3"
+                android:text="Help and Support"
+                android:id="@+id/abouthelp"
+                android:layout_below="@+id/aboutprofiletext"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:textColor="#000000"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/abouthelp"
+
+                android:text="@string/abouthelp"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:id="@+id/abouthelptext"/>
+
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

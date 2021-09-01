@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+    <item android:id="@+id/buymarketprice"
+        android:title="Market Price"
+        android:icon="@drawable/ic_marketprice"/>
+    <item android:id="@+id/buyproducts"
+        android:title="Buy Products"
+        android:icon="@drawable/ic_buy"/>
+    <item android:id="@+id/buycart"
+        android:title="Cart"
+        android:icon="@drawable/ic_cart"/>
+    <item android:id="@+id/buytrackproduct"
+        android:title="Track Order"
+        android:icon="@drawable/ic_order"/>
+    <item android:id="@+id/buypaymentinfo"
+        android:title="Payment Info"
+        android:icon="@drawable/ic_baseline_payment_24"/>
+    <item android:id="@+id/buyfeedback"
+        android:title="Feedback"
+        android:icon="@drawable/ic_baseline_feedback_24"/>
+    <item android:id="@+id/buyprofile"
+        android:title="Profile"
+        android:icon="@drawable/ic_baseline_person_pin_24"/>
+    <item android:id="@+id/buyhelp"
+        android:title="Help and Support"
+        android:icon="@drawable/ic_baseline_help_24"/>
+    <item android:id="@+id/buyabout"
+        android:title="About E-Buy"
+        android:icon="@drawable/ic_baseline_info_24"/>
+    </group>
+</menu>

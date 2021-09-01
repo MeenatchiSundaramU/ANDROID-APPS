@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PriceActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/priceappbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            android:id="@+id/pricetoolbar">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/krisheicon"
+                android:id="@+id/pricekrisheicon"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KRISH-E E-BILL"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:layout_marginLeft="22dp"/>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/priceappbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:id="@+id/fulllayout"
+        android:background="#ffffff">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crop Name: "
+            android:id="@+id/setcropname"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="17sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tomato"
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:id="@+id/setcropnamealue"
+            android:layout_toRightOf="@+id/gpayno"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Farmer's Name: "
+            android:layout_below="@+id/setcropname"
+            android:layout_marginTop="5dp"
+            android:id="@+id/pricefarmersname"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="17sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meenatchi Sundaram"
+            android:textSize="17sp"
+            android:layout_below="@+id/setcropnamealue"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:id="@+id/pricefarmersnamevalue"
+            android:layout_toRightOf="@+id/gpayno"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Farmer's Gpay No: "
+            android:id="@+id/gpayno"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/pricefarmersname"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9842779122"
+            android:textSize="17sp"
+            android:layout_marginTop="5dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:id="@+id/gpaynovalue"
+            android:layout_below="@+id/pricefarmersnamevalue"
+            android:layout_toRightOf="@+id/gpayno"/>
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H.Q.Q(in KG's): "
+            android:id="@+id/pricehqqname"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:layout_below="@+id/gpaynovalue"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="220"
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:id="@+id/pricehqqvalue"
+            android:layout_below="@+id/gpaynovalue"
+            android:layout_toRightOf="@+id/gpayno"
+            android:layout_marginTop="5dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="M.Q.Q(in KG's): "
+            android:id="@+id/pricemqqname"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:layout_below="@+id/pricehqqname"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="220"
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:id="@+id/pricemqqvalue"
+            android:layout_below="@+id/pricehqqvalue"
+            android:layout_toRightOf="@+id/gpayno"
+            android:layout_marginTop="5dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="L.Q.Q(in KG's): "
+            android:id="@+id/pricelqqname"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:layout_below="@+id/pricemqqname"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="220"
+            android:textSize="17sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:id="@+id/pricelqqvalue"
+            android:layout_below="@+id/pricemqqvalue"
+            android:layout_toRightOf="@+id/gpayno"
+            android:layout_marginTop="5dp"/>
+    </RelativeLayout>
+       <com.google.android.material.appbar.AppBarLayout
+           android:layout_width="350dp"
+           android:layout_marginTop="5dp"
+           android:layout_centerHorizontal="true"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/fulllayout"
+           android:id="@+id/amountlay">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Amount: Rs."
+            android:id="@+id/totalpricename"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="17sp"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="220"
+            android:textSize="17sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:id="@+id/totalpricenamevalue"
+            android:layout_toRightOf="@+id/totalpricename"
+            android:layout_marginTop="5dp"/>
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+       </com.google.android.material.appbar.AppBarLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/amountlay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Click Here To Pay"
+        android:textStyle="bold"
+        android:id="@+id/setpay"/>
+<ProgressBar
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:visibility="invisible"
+    android:id="@+id/payprogreesbar"/>
+
+
+</RelativeLayout>

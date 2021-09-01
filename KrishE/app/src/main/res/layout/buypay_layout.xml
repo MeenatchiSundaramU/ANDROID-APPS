@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/gradient">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher_round"
+        android:id="@+id/buypayimage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tomato"
+        android:layout_below="@+id/buypayimage"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:id="@+id/buypaycropname"/>
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_below="@+id/buypaycropname">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="High Quality Price(1 KG): Rs."
+        android:textColor="#ffffff"
+        android:id="@+id/payhigh"
+
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="500"
+        android:textColor="#000000"
+        android:layout_toRightOf="@+id/payhigh"
+        android:id="@+id/buyhighvalue"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medium Quality(1 KG): Rs."
+        android:textColor="#ffffff"
+        android:id="@+id/paymedium"
+        android:layout_below="@+id/payhigh"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="500"
+        android:textColor="#000000"
+        android:layout_below="@+id/buyhighvalue"
+        android:layout_toRightOf="@+id/paymedium"
+        android:id="@+id/buymediumvalue"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"/>
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Low Quality Price(1 KG): Rs."
+             android:id="@+id/paylow"
+             android:textColor="#ffffff"
+             android:layout_below="@+id/paymedium"
+             android:textSize="20sp"
+             android:textStyle="bold"
+             android:layout_marginTop="5dp"
+             android:layout_marginLeft="20dp"/>
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="500"
+             android:textColor="#000000"
+             android:layout_below="@+id/paymedium"
+             android:layout_toRightOf="@+id/paylow"
+             android:id="@+id/paylowvalue"
+             android:textSize="20sp"
+             android:textStyle="bold"
+             android:layout_marginLeft="5dp"
+             android:layout_marginTop="5dp"/>
+        <EditText
+            android:layout_width="380dp"
+            android:layout_height="30dp"
+            android:id="@+id/payedithigh"
+            android:layout_below="@+id/paylowvalue"
+            android:background="@drawable/edit_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:hint="Enter High Quality Quantity"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:inputType="number"/>
+
+        <EditText
+            android:layout_width="380dp"
+            android:layout_height="30dp"
+            android:id="@+id/payeditmedium"
+            android:layout_below="@+id/payedithigh"
+            android:background="@drawable/edit_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:hint="Enter Medium Quality Quantity"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:inputType="number"/>
+        <EditText
+            android:layout_width="380dp"
+            android:layout_height="30dp"
+            android:id="@+id/payeditlow"
+            android:layout_below="@+id/payeditmedium"
+            android:background="@drawable/edit_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:hint="Enter Low Quality Quantity"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:textColor="#000000"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check Price"
+            android:layout_below="@+id/payeditlow"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_text"
+            android:padding="5dp"
+            android:id="@+id/checkprice"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Price: Rs."
+            android:textColor="#ffffff"
+            android:id="@+id/totalpricetext"
+            android:layout_below="@+id/checkprice"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="15dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click Check Price"
+            android:textColor="#000000"
+            android:id="@+id/totalpricevalue"
+            android:layout_below="@+id/checkprice"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/totalpricetext"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pay Now"
+            android:layout_below="@+id/totalpricetext"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_text"
+            android:padding="5dp"
+            android:id="@+id/paynow"/>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

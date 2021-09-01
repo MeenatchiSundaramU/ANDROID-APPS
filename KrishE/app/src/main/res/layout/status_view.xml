@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="15dp"
+    app:cardBackgroundColor="@color/gradient2">
+<LinearLayout
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10">
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:layout_weight="2"
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/statusimage"/>
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="8">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tomato"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="#ffffff"
+            android:id="@+id/statuscropname"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estimated Duration"
+            android:id="@+id/estimatedduration"
+            android:textColor="#ffffff"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/statuscropname"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get Crops - "
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:id="@+id/getcropsdate"
+            android:layout_below="@+id/estimatedduration"
+            android:textSize="12sp"
+            android:layout_marginTop="2dp"
+            android:padding="2dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25/02/2020"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_below="@+id/estimatedduration"
+            android:layout_toRightOf="@+id/getcropsdate"
+            android:id="@+id/getcropsdatevalue"
+            android:layout_marginTop="2dp"
+            android:padding="2dp"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Export Crops - "
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:id="@+id/exportcropsdate"
+            android:layout_below="@+id/getcropsdate"
+            android:textSize="12sp"
+            android:layout_marginTop="2dp"
+            android:padding="2dp"
+            android:textColor="#ffffff"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="27/02/2020"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/getcropsdatevalue"
+            android:layout_toRightOf="@+id/exportcropsdate"
+            android:id="@+id/exportscropsdatevalue"
+            android:layout_marginTop="2dp"
+            android:padding="2dp"
+            android:textColor="#000000"
+            />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivered- "
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:id="@+id/exportmoney"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/exportcropsdate"
+            android:textSize="12sp"
+            android:layout_marginTop="2dp"
+            android:padding="2dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="29/02/2020"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/exportscropsdatevalue"
+            android:layout_toRightOf="@+id/exportmoney"
+            android:id="@+id/exportmoneydate"
+            android:layout_marginTop="2dp"
+            android:padding="2dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Completed"
+                android:layout_toRightOf="@+id/getcropsdatevalue"
+                android:layout_below="@+id/estimatedduration"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:id="@+id/completed"
+                android:textColor="@color/green"
+                android:layout_marginTop="2dp"
+                />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="In Progress"
+            android:layout_toRightOf="@+id/exportscropsdatevalue"
+            android:layout_below="@+id/completed"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"
+            android:id="@+id/Inprogress"
+            android:textColor="@color/yellow"
+            android:layout_marginTop="2dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Not Started"
+            android:layout_toRightOf="@+id/exportmoneydate"
+            android:layout_below="@+id/Inprogress"
+            android:layout_marginLeft="10dp"
+
+            android:id="@+id/notstarted"
+android:layout_marginTop="3dp"
+            android:textColor="@color/red"
+            android:textStyle="bold"/>
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+</LinearLayout>
+</androidx.cardview.widget.CardView>

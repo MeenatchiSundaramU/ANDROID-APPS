@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".sell.EsellregisterActivity"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar android:layout_width="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@drawable/gradient"
+        android:id="@+id/ebuyregistertoolbar"/>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@drawable/gradient">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="380dp"
+                android:layout_height="30dp"
+                android:hint="Enter your State"
+                android:background="@drawable/edit_text"
+                android:textAlignment="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/ebuyregstate"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:textColor="#000000"/>
+            <EditText
+
+                android:layout_width="380dp"
+                android:layout_height="30dp"
+                android:hint="Enter your District"
+                android:id="@+id/ebuyregdistrict"
+                android:layout_below="@+id/ebuyregstate"
+                android:background="@drawable/edit_text"
+                android:textAlignment="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:textColor="#000000"/>
+            <EditText
+                android:layout_width="380dp"
+                android:layout_height="30dp"
+                android:hint="Enter your DOB(DD/MM/YYYY)"
+                android:inputType="text"
+                android:id="@+id/ebuyregdob"
+                android:layout_below="@+id/ebuyregdistrict"
+                android:background="@drawable/edit_text"
+                android:textAlignment="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:textColor="#000000"/>
+            <EditText
+                android:layout_width="380dp"
+                android:layout_height="30dp"
+                android:hint="Enter your Address"
+                android:id="@+id/ebuyregaddress"
+                android:layout_below="@+id/ebuyregdob"
+                android:background="@drawable/edit_text"
+                android:textAlignment="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:textColor="#000000"/>
+            <EditText
+                android:layout_width="380dp"
+                android:layout_height="30dp"
+                android:hint="Enter your Pincode"
+                android:id="@+id/ebuyregpincode"
+                android:inputType="number"
+                android:layout_below="@+id/ebuyregaddress"
+                android:background="@drawable/edit_text"
+                android:textAlignment="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:textColor="#000000"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ebuysubmit"
+                android:layout_below="@id/ebuyregpincode"
+                android:layout_centerHorizontal="true"
+                android:text="SUBMIT"
+                android:background="@drawable/edit_text"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

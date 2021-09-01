@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+    <item android:id="@+id/marketprice"
+        android:title="Crops Suggestion Price"
+        android:icon="@drawable/ic_marketprice"/>
+    <item android:id="@+id/addproducts"
+        android:title="Add Products"
+        android:icon="@drawable/ic_baseline_add_circle_24"/>
+    <item android:id="@+id/selledproducts"
+        android:title="Sold Products"
+        android:icon="@drawable/ic_shop"/>
+    <item android:id="@+id/cancelproducts"
+        android:title="Cancel Products"
+        android:icon="@drawable/ic_cancel"/>
+    <item android:id="@+id/statusofproducts"
+        android:title="Status of Products"
+        android:icon="@drawable/ic_order"/>
+    <item android:id="@+id/notifications"
+        android:title="Notifications"
+        android:icon="@drawable/ic_nonotifi"/>
+    <item android:id="@+id/feedback"
+        android:title="Feedback"
+        android:icon="@drawable/ic_baseline_feedback_24"/>
+    <item android:id="@+id/profile"
+        android:title="Profile"
+        android:icon="@drawable/ic_baseline_person_pin_24"/>
+    <item android:id="@+id/help"
+        android:title="Help and Support"
+        android:icon="@drawable/ic_baseline_help_24"/>
+    <item android:id="@+id/aboutesell"
+        android:title="About E-Sell"
+        android:icon="@drawable/ic_baseline_info_24"
+       />
+    </group>
+
+
+
+
+</menu>

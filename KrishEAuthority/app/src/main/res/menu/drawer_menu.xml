@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+    <item android:id="@+id/addnewcrops"
+        android:title="Add New Crops"
+        android:icon="@drawable/ic_addnew"/>
+    <item android:id="@+id/updateprice"
+        android:title="Update Crops Price"
+        android:icon="@drawable/ic_updateprice"/>
+        <item android:id="@+id/buyershow"
+            android:title="Buyer Show"
+            android:icon="@drawable/ic_buyershow"/>
+        <item android:id="@+id/settleshow"
+            android:title="Farmers Settlement"
+            android:icon="@drawable/ic_farmersettle"/>
+        <item android:id="@+id/paymenthist"
+            android:title="Payment History"
+            android:icon="@drawable/ic_payhist"/>
+
+    </group>
+</menu>

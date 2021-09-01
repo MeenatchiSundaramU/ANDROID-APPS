@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="490dp"
+    app:cardCornerRadius="20dp"
+    android:layout_marginTop="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/histimageview"
+            android:layout_centerHorizontal="true">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="75dp"
+            app:civ_border_width="2dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_margin="5dp"
+            android:id="@+id/histsetview_image"
+            android:layout_gravity="center"
+            android:layout_height="75dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/histimageview">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Crop Name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:id="@+id/histsetview_cropname"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Farmer's Name: "
+                android:layout_below="@+id/histsetview_cropname"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/histsetfarmername"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/histsethqqprice"
+                android:id="@+id/histsetfarmernamevalue"
+                android:text="Mano"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/histsetview_cropname"
+                android:layout_margin="5dp"
+                android:textColor="#000000"/>
+
+
+
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="H.Q.Q(in Kg's): "
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:layout_below="@+id/histsetfarmername"
+                android:textColor="#000000"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/histsethqq"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/histsethqqprice"
+                android:id="@+id/histsethqqvalue"
+                android:text="Mano"
+                android:layout_below="@+id/histsetfarmernamevalue"
+                android:textColor="#000000"
+                android:layout_marginLeft="5dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="M.Q.Q(in Kg's): "
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:layout_below="@+id/histsethqq"
+                android:textColor="#000000"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/histsetmqq"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/histsethqqprice"
+                android:id="@+id/histsetmqqvalue"
+                android:text="Mano"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:layout_below="@+id/histsethqqvalue"
+                android:layout_margin="5dp"
+                android:textColor="#000000"/>
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="L.Q.Q(in Kg's): "
+                android:layout_below="@+id/histsetmqq"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/histsetlqq"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/histsethqqprice"
+                android:id="@+id/histsetlqqvalue"
+                android:text="Mano"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:layout_marginLeft="5dp"
+                android:layout_below="@+id/histsetmqqvalue"
+                android:textColor="#000000"/>
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="H.Q.Q Price(per Kg):Rs."
+                android:layout_below="@+id/histsetlqq"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:textColor="#000000"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/histsethqqprice"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/histsethqqprice"
+                android:id="@+id/histsethqqpricevalue"
+                android:text="100.0-2000"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:layout_below="@+id/histsetlqqvalue"
+                android:layout_margin="5dp"
+                android:textColor="#000000"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="M.Q.Q Price(per Kg):Rs."
+                android:layout_below="@+id/histsethqqprice"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/histsetmqqprice"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/histsethqqprice"
+                android:id="@+id/histsetmqqpricevalue"
+                android:text="Mano"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:layout_below="@+id/histsethqqpricevalue"
+                android:textColor="#000000"
+                android:layout_marginLeft="5dp"/>
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="L.Q.Q Price(in Kg):Rs."
+                android:layout_below="@+id/histsetmqqprice"
+                android:textColor="#000000"
+                android:layout_marginLeft="18dp"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/histsetlqqprice"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/histsethqqprice"
+                android:id="@+id/histsetlqqpricevalue"
+                android:text="Mano"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:layout_below="@+id/histsetmqqpricevalue"
+                android:layout_margin="5dp"
+                android:textColor="#000000"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Price:Rs."
+                android:layout_below="@+id/histsetlqqprice"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/histotalprice"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/histsethqqprice"
+                android:layout_below="@+id/histsetlqqpricevalue"
+                android:id="@+id/histtotal"
+                android:textColor="#000000"
+                android:text="3000"
+                android:textSize="17sp"
+                android:layout_marginLeft="3dp"
+                android:textStyle="bold"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gpay No: "
+                    android:layout_below="@+id/histotalprice"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/hisgpayno"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/histsethqqprice"
+                    android:layout_below="@+id/histtotal"
+                    android:id="@+id/histgpayvalue"
+                    android:textColor="#000000"
+                    android:text="9843779133"
+                    android:textSize="17sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="3dp"
+                    android:textStyle="bold"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Transaction Date: "
+                    android:layout_below="@+id/hisgpayno"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/histransdate"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/histsethqqprice"
+                    android:layout_below="@+id/histgpayvalue"
+                    android:id="@+id/histransvalue"
+                    android:textColor="#000000"
+                    android:text="3000"
+                    android:textSize="17sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="3dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tansaction Time: "
+                    android:layout_below="@+id/histransdate"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/histranstime"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/histsethqqprice"
+                    android:layout_below="@+id/histransvalue"
+                    android:id="@+id/histranstimevalue"
+                    android:textColor="#000000"
+                    android:text="3000"
+                    android:layout_marginTop="5dp"
+                    android:textSize="17sp"
+                    android:layout_marginLeft="3dp"
+                    android:textStyle="bold"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Transaction Id: "
+                    android:layout_below="@+id/histranstimevalue"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/histransid"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/histsethqqprice"
+                    android:layout_below="@+id/histranstimevalue"
+                    android:id="@+id/histransidvalue"
+                    android:textColor="#000000"
+                    android:text="3000"
+                    android:layout_marginTop="5dp"
+                    android:textSize="17sp"
+                    android:layout_marginLeft="3dp"
+                    android:textStyle="bold"/>
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

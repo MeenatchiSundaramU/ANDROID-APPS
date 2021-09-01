@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="175dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="20dp"
+    app:cardBackgroundColor="@color/gradient2">
+<LinearLayout
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="6">
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_weight="1.3"
+        android:padding="5dp"
+        android:scaleType="centerCrop"
+        android:id="@+id/selledproductsicon"/>
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="4.4">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tomato"
+            android:textColor="#ffffff"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/selledcropname"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:padding="3dp"
+            />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantity(in Kg's) :"
+            android:id="@+id/selledcropquantity"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/selledcropname"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50"
+            android:textColor="#000000"
+            android:layout_below="@+id/selledcropname"
+            android:layout_toRightOf="@+id/selledcropquantity"
+            android:id="@+id/selledcropquantityvalue"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amount(in Rs.) :"
+            android:textColor="#ffffff"
+            android:id="@+id/selledcropamount"
+            android:layout_below="@+id/selledcropquantity"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="500"
+            android:textColor="#000000"
+            android:layout_below="@+id/selledcropquantityvalue"
+            android:layout_toRightOf="@+id/selledcropquantity"
+            android:id="@+id/selledcropamountvalue"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date :"
+            android:textColor="#ffffff"
+            android:id="@+id/selleddate"
+            android:layout_below="@+id/selledcropamount"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="29/05/2020"
+            android:textColor="#000000"
+            android:layout_below="@+id/selledcropamountvalue"
+            android:layout_toRightOf="@+id/selleddate"
+            android:id="@+id/selleddatevalue"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:layout_centerHorizontal="true"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transaction id:"
+            android:textColor="#ffffff"
+            android:id="@+id/selledcroptransaction"
+            android:layout_below="@+id/selleddate"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2220 2224 2222"
+            android:textColor="#000000"
+            android:layout_below="@+id/selleddatevalue"
+            android:layout_toRightOf="@+id/selledcroptransaction"
+            android:id="@+id/selledtransactionvalue"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2.3dp"
+           />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/selledcroptransaction"
+            android:text="Download Bill"
+            android:background="@drawable/edit_text"
+            android:layout_centerHorizontal="true"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:layout_marginTop="35dp">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eselledrating"
+        android:src="@drawable/ic_rating"/>
+        <TextView
+            android:layout_toRightOf="@+id/eselledrating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4.3"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:id="@+id/selledratingvalue"/>
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
+</androidx.cardview.widget.CardView>

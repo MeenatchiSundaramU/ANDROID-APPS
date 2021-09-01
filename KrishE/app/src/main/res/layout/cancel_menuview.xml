@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="215dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="20dp"
+    app:cardBackgroundColor="@color/gradient2">
+    <LinearLayout
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="10">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_weight="3"
+            android:padding="5dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/selledproductsicon"/>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tomato"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/cancelcropname"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:padding="3dp"
+                android:textColor="#ffffff"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quantity(in Kg's) :"
+                android:id="@+id/cancelcropquantity"
+                android:layout_below="@+id/cancelcropname"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:textColor="#ffffff"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:textColor="#ffffff"
+                android:layout_below="@+id/cancelcropname"
+                android:layout_toRightOf="@+id/cancelcropquantity"
+                android:id="@+id/cancelquantityvalue"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="High Quality(in Kg's):"
+                android:id="@+id/cancellhigh"
+                android:layout_below="@+id/cancelcropquantity"
+                android:textSize="15sp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="500"
+                android:textColor="#ffffff"
+                android:layout_below="@+id/cancelquantityvalue"
+                android:layout_toRightOf="@+id/cancellhigh"
+                android:id="@+id/cancellhighvalue"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MediumQuality(in Kg's):"
+                android:id="@+id/cancelmedium"
+                android:layout_below="@+id/cancellhigh"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:textColor="#ffffff"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="500"
+                android:textColor="#ffffff"
+                android:layout_below="@+id/cancellhighvalue"
+                android:layout_toRightOf="@+id/cancelmedium"
+                android:id="@+id/cancellmediumvalue"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LowQuality(in Kg's):"
+                android:id="@+id/cancellow"
+                android:textColor="#ffffff"
+                android:layout_below="@+id/cancelmedium"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="500"
+                android:textColor="#ffffff"
+                android:layout_below="@+id/cancellmediumvalue"
+                android:layout_toRightOf="@+id/cancellow"
+                android:id="@+id/cancelllowvalue"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Date:"
+                            android:id="@+id/canceladdproductdate"
+                            android:layout_below="@+id/cancellow"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:textColor="#ffffff"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="25/03/2020"
+                            android:textColor="#ffffff"
+                            android:layout_below="@+id/cancelllowvalue"
+                            android:layout_toRightOf="@+id/canceladdproductdate"
+                            android:id="@+id/canceladdproductdatevalue"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel Item"
+                android:background="@drawable/edit_text"
+                android:layout_below="@+id/canceladdproductdate"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="50dp"/>
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

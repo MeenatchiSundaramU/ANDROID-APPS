@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="320dp"
+    android:maxWidth="10dp"
+    android:layout_marginTop="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="0dp"
+            app:civ_border_width="3dp"
+            android:layout_height="100dp"
+            android:layout_weight="1.5"
+            android:src="@mipmap/ic_launcher"
+            android:layout_margin="5dp"
+            android:id="@+id/setview_image"
+            android:layout_gravity="center"/>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3.5">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Crop Name"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:id="@+id/setview_cropname"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Farmer's Name: "
+                android:layout_below="@+id/setview_cropname"
+                android:textColor="#000000"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/setfarmername"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/sethqqprice"
+                android:id="@+id/setfarmernamevalue"
+                android:text="Mano"
+                android:layout_below="@+id/setview_cropname"
+                android:layout_margin="5dp"
+                android:textColor="#000000"/>
+
+
+
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="H.Q.Q(in Kg's): "
+                android:layout_below="@+id/setfarmername"
+                android:textColor="#000000"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/sethqq"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/sethqqprice"
+                android:id="@+id/sethqqvalue"
+                android:text="Mano"
+                android:layout_below="@+id/setfarmernamevalue"
+                android:textColor="#000000"
+                android:layout_marginLeft="5dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="M.Q.Q(in Kg's): "
+                android:layout_below="@+id/sethqq"
+                android:textColor="#000000"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/setmqq"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/sethqqprice"
+                android:id="@+id/setmqqvalue"
+                android:text="Mano"
+                android:layout_below="@+id/sethqqvalue"
+                android:layout_margin="5dp"
+                android:textColor="#000000"/>
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="L.Q.Q(in Kg's): "
+                android:layout_below="@+id/setmqq"
+                android:textColor="#000000"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/setlqq"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/sethqqprice"
+                android:id="@+id/setlqqvalue"
+                android:text="Mano"
+                android:layout_marginLeft="5dp"
+                android:layout_below="@+id/setmqqvalue"
+                android:textColor="#000000"/>
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="H.Q.Q Price(per Kg):Rs."
+                android:layout_below="@+id/setlqq"
+                android:textColor="#000000"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/sethqqprice"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/sethqqprice"
+                android:id="@+id/sethqqpricevalue"
+                android:text="100.0-2000"
+                android:layout_below="@+id/setlqqvalue"
+                android:layout_margin="5dp"
+                android:textColor="#000000"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="M.Q.Q Price(per Kg):Rs."
+                android:layout_below="@+id/sethqqprice"
+                android:textColor="#000000"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/setmqqprice"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/sethqqprice"
+                android:id="@+id/setmqqpricevalue"
+                android:text="Mano"
+                android:layout_below="@+id/sethqqpricevalue"
+                android:textColor="#000000"
+                android:layout_marginLeft="5dp"/>
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="L.Q.Q Price(in Kg):Rs."
+                android:layout_below="@+id/setmqqprice"
+                android:textColor="#000000"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/setlqqprice"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/sethqqprice"
+                android:id="@+id/setlqqpricevalue"
+                android:text="Mano"
+                android:layout_below="@+id/setmqqpricevalue"
+                android:layout_margin="5dp"
+                android:textColor="#000000"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="F.H.Q.V Price(in Kg):Rs."
+                android:layout_below="@+id/setlqqprice"
+                android:textColor="#000000"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/setFHQVprice"/>
+            <EditText
+                android:layout_width="75dp"
+                android:layout_height="15dp"
+                android:layout_margin="2dp"
+                android:layout_toRightOf="@+id/setFHQVprice"
+                android:layout_below="@+id/setlqqpricevalue"
+                android:hint="Enter Price"
+                android:id="@+id/setFHQVpricevalue"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="#ffffff"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="F.M.Q.V Price(in Kg):Rs."
+                android:layout_below="@+id/setFHQVprice"
+                android:textColor="#000000"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/setMHQVprice"/>
+            <EditText
+                android:layout_width="75dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@+id/setFHQVprice"
+                android:layout_below="@+id/setFHQVpricevalue"
+                android:hint="Enter Price"
+                android:id="@+id/setMHQVpricevalue"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="#ffffff"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="F.L.Q.V Price(in Kg):Rs."
+                android:layout_below="@+id/setMHQVprice"
+                android:textColor="#000000"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/setLHQVprice"/>
+            <EditText
+                android:layout_width="75dp"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="#ffffff"
+                android:layout_height="15dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@+id/setLHQVprice"
+                android:layout_below="@+id/setMHQVpricevalue"
+                android:hint="Enter Price"
+                android:id="@+id/setLHQVpricevalue"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pay Now"
+                android:layout_below="@+id/setLHQVprice"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:id="@+id/setpaybtn"
+                android:layout_margin="2dp"/>
+            <!--<Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/setlqqpricevalue"
+                android:layout_centerInParent="true"
+                android:text="Add To BuyerShow"
+                android:id="@+id/setaddbtns"
+                android:textStyle="bold"/>-->
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

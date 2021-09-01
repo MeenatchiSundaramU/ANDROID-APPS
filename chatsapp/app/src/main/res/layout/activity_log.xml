@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@color/colorPrimary">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="45dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/chaticon2"
+        app:civ_border_width="6dp"
+        app:civ_border_color="#ffffff"
+        android:id="@+id/chaticon" />
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="40dp"
+       android:hint="Enter email"
+       android:id="@+id/logemail"
+       android:inputType="text"
+       android:drawableStart="@drawable/ic_email"
+       android:drawablePadding="6dp"
+       android:layout_marginTop="25dp"
+       android:background="@drawable/rounded_edit"
+       android:layout_below="@+id/chaticon"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp"
+       android:paddingLeft="5dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Enter password"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/ic_pass"
+        android:drawablePadding="6dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/logemail"
+        android:id="@+id/logpass"
+        android:background="@drawable/rounded_edit"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="5dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logpass"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:text="Log In"
+        android:padding="5dp"
+        android:background="@drawable/rounded_edit"
+        android:id="@+id/logbtn"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logbtn"
+        android:text="Forgot Password"
+        android:id="@+id/forgotpass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account?Register here"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/newuser"
+        android:textColor="#ffffff"
+        android:textStyle="bold"/>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/logpro"
+        android:visibility="invisible"/>
+
+
+</RelativeLayout>

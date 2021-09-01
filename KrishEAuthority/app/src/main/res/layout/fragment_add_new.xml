@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AddNewFragment">
+<de.hdodenhof.circleimageview.CircleImageView
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:layout_marginTop="15dp"
+    android:padding="5dp"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/circularimage"
+    app:civ_border_width="5dp"/>
+<Button
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="15dp"
+    android:padding="5dp"
+    android:text="Add Photo"
+    android:textColor="#ffffff"
+    android:textStyle="bold"
+    android:src="@mipmap/ic_launcher_round"
+    android:id="@+id/addimage"
+    android:background="@drawable/add_round"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Crops Name"
+        android:layout_below="@+id/addimage"
+        android:layout_marginTop="15dp"
+        android:layout_margin="15dp"
+        android:id="@+id/addcropsname"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Base Price"
+        android:layout_below="@+id/addcropsname"
+        android:layout_marginTop="15dp"
+        android:layout_margin="15dp"
+        android:id="@+id/addbase"
+        android:inputType="number"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Enter Market Price"
+        android:layout_below="@+id/addbase"
+        android:layout_marginTop="15dp"
+        android:layout_margin="15dp"
+        android:id="@+id/addmarket"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addmarket"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Add Crops"
+        android:id="@+id/addbtn"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/progressbar"
+        android:visibility="invisible"/>
+
+
+
+
+</RelativeLayout>

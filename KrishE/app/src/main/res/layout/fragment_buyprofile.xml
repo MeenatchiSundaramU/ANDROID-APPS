@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sell.EsellprofileFragment"
+    android:background="@drawable/gradient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/buyprofilename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"/>
+
+
+        <EditText
+            android:id="@+id/buyprofilenamevalue"
+            android:layout_width="380dp"
+            android:layout_height="30dp"
+
+            android:textAlignment="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="MeenatchiSundaram"
+            android:textStyle="bold"
+            android:enabled="false"
+            android:layout_gravity="center"
+            android:background="@drawable/edit_text"
+            android:textColor="#000000" />
+
+
+
+
+        <TextView
+            android:id="@+id/buyprofilemobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile No"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"/>
+        <EditText
+
+            android:textColor="#000000"
+            android:id="@+id/buyprofilemobilevalue"
+            android:layout_width="380dp"
+            android:layout_gravity="center"
+            android:layout_height="30dp"
+            android:text="9360685327"
+            android:enabled="false"
+            android:textStyle="bold"
+            android:background="@drawable/edit_text"
+            android:textAlignment="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+
+            />
+
+
+
+
+        <TextView
+            android:id="@+id/buyprofileemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E-mail"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"/>
+        <EditText
+            android:id="@+id/buyprofileemailvalue"
+            android:layout_width="380dp"
+            android:layout_gravity="center"
+            android:layout_height="30dp"
+            android:text="meenatchisundaram63@gmail.com"
+            android:enabled="false"
+            android:textStyle="bold"
+            android:background="@drawable/edit_text"
+            android:textAlignment="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#000000"
+            />
+
+
+
+        <TextView
+            android:textColor="#ffffff"
+            android:id="@+id/buyprofiledob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date Of Birth(DOB)"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"/>
+        <EditText
+            android:id="@+id/buyprofiledobvalue"
+            android:layout_width="380dp"
+            android:layout_gravity="center"
+            android:layout_height="30dp"
+            android:text="29/05/2001"
+            android:textStyle="bold"
+            android:enabled="false"
+            android:background="@drawable/edit_text"
+            android:textAlignment="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#000000"
+            />
+
+
+
+
+        <TextView
+            android:textColor="#ffffff"
+            android:id="@+id/buyprofilestate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="State"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"/>
+        <EditText
+
+            android:id="@+id/buyprofilestatevalue"
+            android:layout_width="380dp"
+            android:layout_gravity="center"
+            android:layout_height="30dp"
+            android:text="TamilNadu"
+            android:enabled="false"
+            android:textStyle="bold"
+            android:background="@drawable/edit_text"
+            android:textAlignment="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#000000"
+
+            />
+
+
+
+
+        <TextView
+            android:textColor="#ffffff"
+            android:id="@+id/buyprofiledistrict"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="District"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+        <EditText
+
+            android:id="@+id/buyprofiledistrictvalue"
+            android:layout_width="380dp"
+            android:layout_gravity="center"
+            android:layout_height="30dp"
+            android:text="Tirunelveli"
+
+            android:enabled="false"
+            android:textStyle="bold"
+            android:background="@drawable/edit_text"
+            android:textAlignment="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#000000"
+
+
+            />
+
+
+
+
+
+        <TextView
+            android:textColor="#ffffff"
+            android:id="@+id/buyprofileaddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"/>
+        <EditText
+
+            android:id="@+id/buyprofileaddressvalue"
+            android:layout_width="380dp"
+            android:layout_gravity="center"
+            android:layout_height="30dp"
+            android:text="93B,Sundara Vinayagar Kovil Street,Vallioor"
+
+            android:enabled="false"
+            android:textStyle="bold"
+            android:background="@drawable/edit_text"
+            android:textAlignment="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#000000"
+
+
+            />
+
+
+
+        <TextView
+            android:textColor="#ffffff"
+            android:id="@+id/buyprofilepincode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pincode"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:id="@+id/buyprofilepincodevalue"
+            android:layout_width="380dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:text="627117"
+            android:enabled="false"
+            android:textStyle="bold"
+            android:background="@drawable/edit_text"
+            android:textAlignment="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#000000"
+
+            />
+
+
+</LinearLayout>
+</ScrollView>
