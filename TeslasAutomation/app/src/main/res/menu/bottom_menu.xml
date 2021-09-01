@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/relay"
+        android:title="Relay"
+        android:icon="@drawable/relay"/>
+    <item android:id="@+id/temp_sensor"
+        android:title="Temp Sensor"
+        android:icon="@drawable/temp_sensor"/>
+    <item android:id="@+id/power"
+        android:title="Power"
+        android:icon="@drawable/power"/>
+    <item android:id="@+id/data_log"
+        android:title="Data Log"
+        android:icon="@drawable/data_log"/>
+    <item android:id="@+id/graph"
+        android:title="Graph"
+        android:icon="@drawable/graph"/>
+
+</menu>

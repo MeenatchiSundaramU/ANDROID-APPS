@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RelayFragment">
+   <de.hdodenhof.circleimageview.CircleImageView
+       android:layout_width="100dp"
+       android:id="@+id/circular_relay1"
+       android:background="@android:color/white"
+       android:layout_height="100dp"
+       android:layout_marginTop="100dp"
+       android:layout_marginLeft="60dp"/>
+   <Button
+       android:layout_width="100dp"
+       android:layout_height="100dp"
+       android:id="@+id/btn_1"
+       android:background="@drawable/relay_button"
+       android:text="RELAY 1 OFF"
+       android:textAllCaps="true"
+       android:textColor="@android:color/white"
+       android:textStyle="bold"
+       android:layout_marginTop="100dp"
+       android:layout_marginLeft="60dp"/>
+
+
+   <de.hdodenhof.circleimageview.CircleImageView
+       android:layout_width="100dp"
+       android:id="@+id/circular_relay2"
+       android:layout_toRightOf="@+id/circular_relay1"
+       android:background="@android:color/white"
+       android:layout_height="100dp"
+       android:layout_marginTop="100dp"
+       android:layout_marginLeft="40dp"/>
+   <Button
+       android:layout_width="100dp"
+       android:layout_height="100dp"
+       android:background="@drawable/relay_button"
+       android:layout_toRightOf="@+id/circular_relay1"
+       android:layout_marginTop="100dp"
+       android:id="@+id/btn_2"
+       android:layout_marginLeft="40dp"
+       android:text="RELAY 2 OFF"
+       android:textStyle="bold"
+       android:textColor="@android:color/white"/>
+
+
+
+   <de.hdodenhof.circleimageview.CircleImageView
+       android:layout_width="100dp"
+       android:id="@+id/circular_relay3"
+       android:layout_below="@+id/circular_relay1"
+       android:background="@android:color/white"
+       android:layout_height="100dp"
+       android:layout_marginTop="50dp"
+       android:layout_marginLeft="60dp"/>
+   <Button
+       android:layout_width="100dp"
+       android:layout_height="100dp"
+       android:background="@drawable/relay_button"
+       android:layout_below="@+id/circular_relay1"
+       android:layout_marginTop="50dp"
+       android:layout_marginLeft="60dp"
+       android:text="RELAY 3 OFF"
+       android:id="@+id/btn_3"
+       android:textStyle="bold"
+       android:textColor="@android:color/white"/>
+
+   <de.hdodenhof.circleimageview.CircleImageView
+       android:layout_width="100dp"
+       android:id="@+id/circular_image4"
+       android:layout_toRightOf="@+id/circular_relay3"
+       android:layout_below="@+id/circular_relay2"
+       android:background="@android:color/white"
+       android:layout_height="100dp"
+       android:layout_marginTop="50dp"
+       android:layout_marginLeft="40dp"/>
+   <Button
+       android:layout_width="100dp"
+       android:layout_height="100dp"
+       android:id="@+id/btn_4"
+       android:background="@drawable/relay_button"
+       android:layout_toRightOf="@+id/circular_relay3"
+       android:layout_below="@+id/circular_relay2"
+       android:layout_marginTop="50dp"
+       android:layout_marginLeft="40dp"
+       android:text="RELAY 4 OFF"
+       android:textStyle="bold"
+       android:textColor="@android:color/white"/>
+
+
+
+</RelativeLayout>

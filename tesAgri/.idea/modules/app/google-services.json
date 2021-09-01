@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "514479370400",
+    "project_id": "tesagri-5f922",
+    "storage_bucket": "tesagri-5f922.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:514479370400:android:02bee9199dfa125794d9c5",
+        "android_client_info": {
+          "package_name": "com.ums.tesagri"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "514479370400-fbebefr51bm5mgbbor9qc1s5vht1espl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ums.tesagri",
+            "certificate_hash": "6549a1402458a1fa924ffcc910670f7c218a5a26"
+          }
+        },
+        {
+          "client_id": "514479370400-0rmtoi0pjesrri76lji1do9cj06mtr1b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDo3Yh7eziDMVpcdK3flpdyZEsrBTzDiZM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "514479370400-0rmtoi0pjesrri76lji1do9cj06mtr1b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

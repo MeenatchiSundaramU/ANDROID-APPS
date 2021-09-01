@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="280dp"
+    xmlns:aandroid="http://schemas.android.com/tools"
+    android:layout_marginTop="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chicken"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/req_flesh_name"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/req_flesh_v"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/req_flesh_name">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Flesh Variety: "
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:textColor="#000000"
+
+                    android:id="@+id/req_flesh_varity"/>
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nattukolzhi"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+
+
+                    android:id="@+id/req_vari_value"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/req_flesh_v"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:id="@+id/req_flesh_quan">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Quantity(in Kg):"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="10dp"
+
+                    android:id="@+id/req_quan"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10"
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp"
+
+                    android:id="@+id/req_quan_value"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:id="@+id/flesherotp"
+                android:layout_below="@+id/req_flesh_quan"
+                android:layout_centerHorizontal="true">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Flesher OTP:"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:textColor="#000000"
+
+                    android:id="@+id/flesher_OTP"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1000"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:layout_marginLeft="5dp"
+
+
+                    android:id="@+id/req_otp_value"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:id="@+id/buyerotp"
+                android:layout_below="@+id/flesherotp"
+                android:layout_centerHorizontal="true">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Buyer OTP:"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:textColor="#000000"
+
+                    android:id="@+id/buyer_OTP"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1000"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/buyer_otp_value"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:id="@+id/flesher_no"
+                android:layout_below="@+id/buyerotp"
+                android:layout_centerHorizontal="true">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Flesher Mobile:"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:textColor="#000000"
+
+                    android:id="@+id/fleshermobile"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1000"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/flesher_mobile_value"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:id="@+id/buyer_no"
+                android:layout_below="@+id/flesher_no"
+                android:layout_centerHorizontal="true">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Buyer Mobile:"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:textColor="#000000"
+
+                    android:id="@+id/buyermobile"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1000"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/buyer_mobile_value"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:id="@+id/total"
+                android:layout_below="@+id/buyer_no"
+                android:layout_centerHorizontal="true">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Price (in Rs):"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:textColor="#000000"
+                    android:id="@+id/total_price"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1000"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="17sp"
+                    android:id="@+id/price_value"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/total"
+                android:id="@+id/order_ids"
+                android:layout_centerHorizontal="true">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Order ID:"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    aandroid:textColor="#000000"
+                    android:id="@+id/orderid"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1000"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:id="@+id/ids_value"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

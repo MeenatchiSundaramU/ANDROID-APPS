@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "46260312456",
+    "firebase_url": "https://teslasautomation.firebaseio.com",
+    "project_id": "teslasautomation",
+    "storage_bucket": "teslasautomation.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:46260312456:android:c49bc14251ce0716d0823d",
+        "android_client_info": {
+          "package_name": "com.ums.teslasautomation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "46260312456-bpjo2tmaksfgrv9grtksoumpnhkjrdb4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ums.teslasautomation",
+            "certificate_hash": "6549a1402458a1fa924ffcc910670f7c218a5a26"
+          }
+        },
+        {
+          "client_id": "46260312456-i475fei13gbl70lsq4dbcicd99isksb7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPw-wA0DgE8QCyCXfmK3S_tjD2ANaoNiY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "46260312456-i475fei13gbl70lsq4dbcicd99isksb7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

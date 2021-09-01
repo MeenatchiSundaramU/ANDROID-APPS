@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="165dp"
+    android:layout_marginTop="8dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/colorPrimary"
+    app:cardCornerRadius="10dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        tools:ignore="ExtraText">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chicken"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/req_flesh_name"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/req_flesh_v"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/req_flesh_name">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Flesh Variety: "
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="#ffffff"
+
+            android:id="@+id/req_flesh_varity"/>
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nattukolzhi"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="17sp"
+
+
+            android:id="@+id/req_vari_value"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/req_flesh_v"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:id="@+id/req_flesh_quan">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Quantity(in Kg):"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="10dp"
+
+            android:id="@+id/req_quan"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10"
+            android:textColor="#ffffff"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+
+            android:id="@+id/req_quan_value"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:id="@+id/otp"
+            android:layout_below="@+id/req_flesh_quan"
+            android:layout_centerHorizontal="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OTP:"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:textColor="#ffffff"
+
+                android:id="@+id/OTP"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1000"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:layout_marginLeft="5dp"
+
+
+                android:id="@+id/req_otp_value"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/otp"
+            android:layout_centerHorizontal="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order ID:"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="#ffffff"
+                android:id="@+id/orderid"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1000"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:id="@+id/id_value"/>
+        </LinearLayout>
+
+</RelativeLayout>
+</LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PowerFragment">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VOLTAGE(V)"
+        android:id="@+id/volt_head"
+        android:background="@drawable/btn_stroke"
+        android:padding="3dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="45dp"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_below="@+id/volt_head"
+        android:layout_width="150dp"
+        android:id="@+id/circular_voltage1"
+        android:background="@android:color/white"
+        android:layout_height="150dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="25dp"/>
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/volt_head"
+        android:id="@+id/voltage_1"
+        android:background="@drawable/temp_btn"
+        android:text="4.5"
+        android:textSize="25dp"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="25dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CURRENT(mA)"
+        android:background="@drawable/btn_stroke"
+        android:padding="3dp"
+        android:id="@+id/current_head"
+        android:layout_toRightOf="@+id/volt_head"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="60dp"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="150dp"
+        android:id="@+id/circular_current2"
+        android:layout_toRightOf="@+id/circular_voltage1"
+        android:background="@android:color/white"
+        android:layout_height="150dp"
+        android:layout_below="@+id/current_head"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"/>
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/temp_btn"
+        android:layout_toRightOf="@+id/circular_voltage1"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/volt_head"
+        android:id="@+id/current_1"
+        android:layout_marginLeft="20dp"
+        android:text="0"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/current_1"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_stroke"
+        android:layout_marginTop="50dp"
+        android:text="CLICK ME RECORD"
+        android:padding="10dp"
+        android:id="@+id/cv_record"/>
+
+
+</RelativeLayout>

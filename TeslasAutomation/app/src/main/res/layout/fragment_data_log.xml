@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DataLogFragment">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DATA LOGGING"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="150dp"
+        android:id="@+id/temp_log"
+        android:background="@android:color/white"
+        android:layout_height="150dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="25dp"/>
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/templog_1"
+        android:layout_centerVertical="true"
+        android:background="@drawable/temp_btn"
+        android:text="TEMP SENSOR"
+        android:textSize="18dp"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="25dp"/>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="150dp"
+        android:id="@+id/vilog"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/templog_1"
+        android:background="@android:color/white"
+        android:layout_height="150dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"/>
+    <Button
+        android:layout_centerVertical="true"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/temp_btn"
+        android:layout_toRightOf="@+id/templog_1"
+        android:layout_marginTop="30dp"
+        android:id="@+id/vi_1"
+        android:layout_marginLeft="20dp"
+        android:text="Volt-Curr Sensor"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"/>
+
+</RelativeLayout>

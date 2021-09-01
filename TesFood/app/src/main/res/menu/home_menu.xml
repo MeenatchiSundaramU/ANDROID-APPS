@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+<item android:title="mano"
+    android:icon="@drawable/ic_requirement"
+    android:id="@+id/requirement"/>
+    <item android:title=""
+        android:icon="@drawable/ic_add"
+        android:id="@+id/add_pro"/>
+    <item android:title=""
+        android:icon="@drawable/ic_update"
+        android:id="@+id/update"/>
+    <item android:title=""
+        android:icon="@drawable/ic_profile"
+        android:id="@+id/sold_out"/>
+        <item android:title=""
+            android:icon="@drawable/ic_contact"
+            android:id="@+id/admin_contact"/>
+<!--    <item android:title=""-->
+<!--        android:icon="@drawable/ic_sold_out"-->
+<!--        android:id="@+id/profile"/>-->
+
+    </group>
+</menu>
